@@ -1,8 +1,10 @@
 ie-web-worker
 =============
-A simple script that emulates web worker threads in IE
+A simple script that emulates web worker threads in Internet Explorer.
 
-The code will still be slow (single threaded) but you can keep you code consistent
+This project was originally built by Jason Taylor and moved with permission to Github from a Google Code project at http://code.google.com/p/ie-web-worker/.
+
+The code will still be slow (single-threaded) but you can keep you code consistent.
 
 ###Usage
 
