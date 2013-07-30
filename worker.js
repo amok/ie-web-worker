@@ -92,6 +92,16 @@ if(!Worker)
 			return xmlhttp;
 		}
 
+		var importScripts = function(src)
+		{
+			// hack time, this will import the script but not wait for it to load...
+			var script = document.createElement("SCRIPT") ;
+			script.src = src ;
+			script.setAttribute( "type", "text/javascript" ) ;
+			document.getElementsByTagName("HEAD")[0].appendChild(script)
+			return true ;
+		} ;
+
 		var http = getHTTPObject()
 		http.open("GET", scriptFile, false)
 		http.send(null);
@@ -119,16 +129,6 @@ if(!Worker)
 					break;
 			}
 		}
-
-		self.importScripts = function(src)
-		{
-			// hack time, this will import the script but not wait for it to load...
-			var script = document.createElement("SCRIPT") ;
-			script.src = src ;
-			script.setAttribute( "type", "text/javascript" ) ;
-			document.getElementsByTagName("HEAD")[0].appendChild(script)
-			return true ;
-		} ;
 
 		return true ;
 	} ;
