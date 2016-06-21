@@ -1,3 +1,13 @@
+# A bit of retrospective
+
+It is actually WebWorkers stub for IE (or whatever, http://caniuse.com/#feat=webworkers :)
+
+As noticed below, originally hosted on Google Code
+
+Project was moved here, and issue [importScripts not supported](https://code.google.com/archive/p/ie-web-worker/issues/1) was fixed
+
+So it's working stub now
+
 ie-web-worker
 =============
 A simple script that emulates web worker threads in Internet Explorer.
